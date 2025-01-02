@@ -1,0 +1,56 @@
+# Ignore o diretório de biblioteca do Unity, onde o editor armazena arquivos temporários
+Library/
+
+# Ignore o diretório de cache
+Temp/
+
+# Ignore os arquivos gerados durante a construção do projeto
+Build/
+Builds/
+
+# Ignore os arquivos de metadados do Unity
+.obj/
+
+# Ignore o diretório de exportação do Unity
+ExportedObj/
+
+# Ignore o diretório de logs do Unity
+Logs/
+
+# Ignore as configurações de sistema do Unity
+UserSettings/
+
+# Ignore arquivos específicos do sistema operacional
+# No Windows
+Thumbs.db
+ehthumbs.db
+
+# No macOS
+.DS_Store
+
+# Ignore arquivos de configuração do editor do Unity
+.idea/
+
+# Ignore o arquivo de configuração do Visual Studio (se você estiver usando)
+.vs/
+.vscode/
+
+# Ignore arquivos do JetBrains Rider (se estiver usando)
+.idea/
+
+# Ignore arquivos de backup do Unity
+*.bak
+*.swp
+
+# Ignore arquivos temporários criados durante o build ou execução
+*.pidb
+*.suo
+*.user
+*.userprefs
+
+# Ignore arquivos de prefabs de compilação e etc
+*.csproj
+*.unityproj
+*.booproj
+
+# Ignore pacotes específicos do Unity
