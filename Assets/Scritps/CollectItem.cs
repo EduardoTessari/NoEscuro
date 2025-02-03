@@ -1,5 +1,3 @@
-using System.Xml.Serialization;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class CollectItem : MonoBehaviour
@@ -7,19 +5,20 @@ public class CollectItem : MonoBehaviour
     private bool _canCollect;
     private DestroyItem _destroy;
 
-    private Inventory _inventory;
+    private Inventory _inventory; //Instancia o Script de inventário que está no gerenciador de inventário (tem que ter apenas 1 no jogo)
+    private StoneRespawn _stoneMG; //Instancia o Script de Respawn da Pedras que está no gerenciador de Itens (tem que ter apenas 1 no jogo)
 
     private void Awake()
     {
         _destroy = GetComponent<DestroyItem>();
-        
-        _inventory = FindAnyObjectByType<Inventory>();
+        _stoneMG = FindAnyObjectByType<StoneRespawn>(); //Localiza o script de StoneRespawn (tem que ter apenas 1 no jogo)
+        _inventory = FindAnyObjectByType<Inventory>(); //Localiza o script de Inventorio (tem que ter apenas 1 no jogo)
     }
 
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.CompareTag("Player"))
+        if (collision.CompareTag("Player"))
         {
             Debug.Log("Pode Me coletar");
             _canCollect = true;
@@ -35,18 +34,19 @@ public class CollectItem : MonoBehaviour
                 if (Input.GetKey(KeyCode.E))
                 {
                     _canCollect = false;
-                    _destroy.DestroyGO(1f);
+                    _destroy.DestroyGO(1f); // Destroi depois de Xf de coleta
+                    _stoneMG.TotalStone--; // Diminui o total de Minas no jogo (Talvez tenha que trocar por uma nova rotina aqui);
                     _inventory.addStone();
                     Debug.Log("Obrigado por me coletar");
 
                 }
-            } 
+            }
         }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if(collision.CompareTag("Player"))
+        if (collision.CompareTag("Player"))
         {
             _canCollect = false;
             Debug.Log("Até logo");
