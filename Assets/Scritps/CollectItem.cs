@@ -5,14 +5,14 @@ public class CollectItem : MonoBehaviour
     private bool _canCollect;
     private DestroyItem _destroy;
 
-    private Inventory _inventory; //Instancia o Script de inventário que está no gerenciador de inventário (tem que ter apenas 1 no jogo)
+    private InventoryManager _inventory; //Instancia o Script de inventário que está no gerenciador de inventário (tem que ter apenas 1 no jogo)
     private StoneRespawn _stoneMG; //Instancia o Script de Respawn da Pedras que está no gerenciador de Itens (tem que ter apenas 1 no jogo)
 
     private void Awake()
     {
         _destroy = GetComponent<DestroyItem>();
         _stoneMG = FindAnyObjectByType<StoneRespawn>(); //Localiza o script de StoneRespawn (tem que ter apenas 1 no jogo)
-        _inventory = FindAnyObjectByType<Inventory>(); //Localiza o script de Inventorio (tem que ter apenas 1 no jogo)
+        _inventory = FindAnyObjectByType<InventoryManager>(); //Localiza o script de Inventorio (tem que ter apenas 1 no jogo)
     }
 
 
