@@ -36,6 +36,7 @@ public class CollectItem : MonoBehaviour
                     _canCollect = false;
                     _destroy.DestroyGO(1f); // Destroi depois de Xf de coleta
                     _stoneMG.TotalStone--; // Diminui o total de Minas no jogo (Talvez tenha que trocar por uma nova rotina aqui);
+                    _stoneMG.respawnStone();
                     _inventory.addStone();
                     Debug.Log("Obrigado por me coletar");
 
