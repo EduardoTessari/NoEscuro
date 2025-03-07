@@ -1,0 +1,47 @@
+[33mcommit 687bc8b4818e5af794fc748b9cf1e8508a52033e[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: EduardoTessari <tessari702@gmail.com>
+Date:   Sun Mar 2 17:55:33 2025 -0300
+
+    Adicionado 1. Sprite da Ponte quebrada e consertada; 2. NPC para conserto, 3. Painel e botões para o NPC, 4. Mecanica para abrir e fechar o painel do NPC.
+
+[33mcommit a0622a1d39371417b0b2662c695f761c021435b3[m
+Author: EduardoTessari <tessari702@gmail.com>
+Date:   Sun Feb 16 16:11:54 2025 -0300
+
+    Adicionado 1. Mecanica de atualizacao do Inventário 2. Botao para abrir inventario 3. Inventario aberto pausa o jogo.
+
+[33mcommit 49a742d3f5abdb4531c45f9ea8dc4dd1623a8308[m
+Author: EduardoTessari <tessari702@gmail.com>
+Date:   Sun Feb 9 21:01:05 2025 -0300
+
+    Adicionado o sprite da mina de pedra
+
+[33mcommit a35788eca6aae3ea3c825e379c39a576f8f5f51a[m
+Author: EduardoTessari <tessari702@gmail.com>
+Date:   Mon Feb 3 20:33:57 2025 -0300
+
+    Adicionado as mecanicas: 1.Criaçao automatica das pedras 2. Limite de 10 Pedras 3. Pedras nascem aleatóriamente dentro de um espaço X.
+
+[33mcommit d3878398517af1469de91b23627398d5e29eec31[m
+Author: EduardoTessari <tessari702@gmail.com>
+Date:   Sat Feb 1 18:17:48 2025 -0300
+
+    Adicionado a mecanica de coleta de pedras e a mecanica de armazenamento no inventário
+
+[33mcommit de4fd645baf442a09ce81b12ff9251142ac27904[m
+Author: EduardoTessari <tessari702@gmail.com>
+Date:   Sun Jan 19 14:30:02 2025 -0300
+
+    Adição da mecanica de ativação e desativação do primeiro pergaminho
+
+[33mcommit 94b1ab39d3ce68989b883fd2eaa9ae3f7ea3d222[m
+Author: EduardoTessari <tessari702@gmail.com>
+Date:   Sun Jan 12 17:54:43 2025 -0300
+
+    adicionado script de movimento do pesonagem e mecanica de camera
+
+[33mcommit d04d27364c9f77347a189db2cfdb21f754565d76[m
+Author: EduardoTessari <tessari702@gmail.com>
+Date:   Wed Jan 1 23:26:02 2025 -0300
+
+    Primeiro commit do projeto
