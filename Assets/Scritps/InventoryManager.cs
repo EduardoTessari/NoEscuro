@@ -22,18 +22,18 @@ public class InventoryManager : MonoBehaviour
 
     private Transform _cabecalho, _inventarioArma;
 
+    
+
 
     private void Awake()
     {
-        //createInventory();
     }
 
-
+    // Essa região nao deveria estar no ItemManager?
     #region Adiçao de recursos
     public void addStone()
     {
         stone++;
-
         Debug.Log("Quantidade de pedra" + stone);
     }
 

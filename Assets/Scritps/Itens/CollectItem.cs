@@ -37,8 +37,7 @@ public class CollectItem : MonoBehaviour
                     _destroy.DestroyGO(1f); // Destroi depois de Xf de coleta
                     if (gameObject.tag == "Stone")
                     {
-                        //_stoneMG.TotalStone--; // Diminui o total de Minas no jogo (Talvez tenha que trocar por uma nova rotina aqui);
-                        //_stoneMG.respawnStone();
+                        _stoneMG.removeStone(); // Diminui o total de Minas no jogo (Talvez tenha que trocar por uma nova rotina aqui);
                         _inventory.addStone();
                     }
                     else if(gameObject.tag == "Mushroom")
